@@ -1,0 +1,2 @@
+<!DOCTYPE html>
+lorem ipsum
