@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <title>Graphics | roofdrunk</title>
 <meta charset="UTF-8">
