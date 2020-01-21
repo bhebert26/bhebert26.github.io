@@ -41,7 +41,6 @@ body, html {
     animation: progressBar1 3s ease-in-out;
     animation-fill-mode:both; 
 }
-
 @keyframes progressBar1 {
   0% { width: 0; }
   100% { width: 90%; }
@@ -50,7 +49,6 @@ body, html {
     animation: progressBar2 3s ease-in-out;
     animation-fill-mode:both; 
 }
-
 @keyframes progressBar2 {
   0% { width: 0; }
   100% { width: 60%; }
@@ -59,8 +57,31 @@ body, html {
     animation: progressBar3 3s ease-in-out;
     animation-fill-mode:both; 
 }
-
 @keyframes progressBar3 {
+  0% { width: 0; }
+  100% { width: 50%; }
+}
+.progress4 {
+    animation: progressBar4 3s ease-in-out;
+    animation-fill-mode:both; 
+}
+@keyframes progressBar4 {
+  0% { width: 0; }
+  100% { width: 90%; }
+}
+.progress5 {
+    animation: progressBar5 3s ease-in-out;
+    animation-fill-mode:both; 
+}
+@keyframes progressBar5 {
+  0% { width: 0; }
+  100% { width: 60%; }
+}
+.progress6 {
+    animation: progressBar6 3s ease-in-out;
+    animation-fill-mode:both; 
+}
+@keyframes progressBar6 {
   0% { width: 0; }
   100% { width: 50%; }
 }
@@ -85,9 +106,9 @@ body, html {
     <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="bar-item button">HOME</a>
-    <a href="#coding" class="bar-item button hide-small"><i class="fa fa-user"></i> CODE</a>
-    <a href="#graphics" class="bar-item button hide-small"><i class="fa fa-th"></i> ART</a>
+    <a href="https://roofdrunk.dev/" class="bar-item button">HOME</a>
+    <a href="#coding" class="bar-item button hide-small"><i class="fa fa-file-code"></i> CODE</a>
+    <a href="#graphics" class="bar-item button hide-small"><i class="fa fa-photo-video"></i> ART</a>
     <a href="#social" class="bar-item button hide-small"><i class="fa fa-user"></i> SOCIAL</a>
   </div>
 
@@ -127,7 +148,7 @@ body, html {
   <div class="light-grey">
     <div class="container padding-small dark-grey center progress1" style="width:90%">45%</div>
   </div>
-  <p class="wide"><i class="fa fa-server"></i>Database Design</p>
+  <p class="wide"><i class="fa fa-database"></i>Database Design</p>
   <div class="light-grey">
     <div class="container padding-small dark-grey center progress2" style="width:60%">30%</div>
   </div>
@@ -182,6 +203,19 @@ body, html {
       <img src="/images/hunterwickver2-better.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
     </div>
     <button class="button padding-large light-grey" style="margin-top:64px">LOAD MORE</button>
+  </div>
+  <p class="large center padding-16">SKILLS</p>
+  <p class="wide"><i class="fa fa-code"></i>Object-Oriented Programming</p>
+  <div class="light-grey">
+    <div class="container padding-small dark-grey center progress3" style="width:90%">45%</div>
+  </div>
+  <p class="wide"><i class="fa fa-server"></i>Database Design</p>
+  <div class="light-grey">
+    <div class="container padding-small dark-grey center progress4" style="width:60%">30%</div>
+  </div>
+  <p class="wide"><i class="fa fa-laptop-code"></i>Web Design</p>
+  <div class="light-grey">
+    <div class="container padding-small dark-grey center progress5" style="width:50%">25%</div>
   </div>
 </div>
 
