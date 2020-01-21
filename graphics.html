@@ -14,7 +14,7 @@ body, html {
   line-height: 1.8;
 }
 
-/* Create a Parallax Effect */
+/* for parallax effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
   background-position: center;
@@ -22,19 +22,16 @@ body, html {
   background-size: cover;
 }
 
-/* First image (Logo. Full height) */
 .bgimg-1 {
   background-image: url("/images/galaxy.png");
   min-height: 100%;
 }
 
-/* Second image (Portfolio) */
 .bgimg-2 {
   background-image: url("/images/huntercover.png");
   min-height: 400px;
 }
 
-/* Third image (Contact) */
 .bgimg-3 {
   background-image: url("/images/oc3_4k.jpg");
   min-height: 400px;
@@ -43,13 +40,7 @@ body, html {
 .wide {letter-spacing: 10px;}
 .hover-opacity {cursor: pointer;}
 
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
+
 </style>
 <body>
 
