@@ -111,7 +111,7 @@ body, html {
     <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="https://roofdrunk.dev/" class="bar-item button"><i class="fa fa-home"></i>HOME</a>
+    <a href="#home" class="bar-item button"><i class="fa fa-home"></i>HOME</a>
     <a href="#coding" class="bar-item button hide-small"><i class="fa fa-file-code"></i> CODE</a>
     <a href="#graphics" class="bar-item button hide-small"><i class="fa fa-photo-video"></i> ART</a>
     <a href="#social" class="bar-item button hide-small"><i class="fa fa-user"></i> SOCIAL</a>
@@ -189,7 +189,7 @@ body, html {
 
   <div class="row-padding center section">
     <div class="col m3">
-      <img src="/images/DsG8UuwU8AEr4kd.jpg" style="width:100%; margin-bottom:10px;" onclick="onClick(this)" class="hover-opacity" alt="Among the Stars">
+      <img src="/images/DsG8UuwU8AEr4kd.jpg" style="width:100%; margin-bottom:10px;" onclick="onClick(this)" class="hover-opacity" alt="Open your Eyes">
     </div>
 
     <div class="col m3">
@@ -197,7 +197,7 @@ body, html {
     </div>
 
     <div class="col m3">
-      <img src="/images/DhzTh6BX4AAn63t.jpg" style="width:100%; margin-bottom:10px;" onclick="onClick(this)" class="hover-opacity" alt="Open your Eyes">
+      <img src="/images/DhzTh6BX4AAn63t.jpg" style="width:100%; margin-bottom:10px;" onclick="onClick(this)" class="hover-opacity" alt="Among the Stars">
     </div>
 
     <div class="col m3">
@@ -304,6 +304,13 @@ function toggleFunction() {
         x.className = x.className.replace(" show", "");
     }
 }
+$("div").find("a").click(function(e) {
+    e.preventDefault();
+    var section = $(this).attr("href");
+    $("html, body").animate({
+        scrollTop: $(section).offset().top
+    });
+});
 </script>
 </body>
 </html>
