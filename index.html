@@ -35,6 +35,10 @@ body, html {
   background-image: url("/images/oc3_4k.jpg");
   min-height: 400px;
 }
+.bgimg-4 {
+  background-image: url("/images/wp1895650.png");
+  min-height: 400px;
+}
 
 .adobeicon {
 	width:23px; 
@@ -97,10 +101,13 @@ body, html {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     background-attachment: scroll;
     min-height: 400px;
   }
+}
+html {
+  scroll-behavior: smooth;
 }
 
 </style>
@@ -271,6 +278,12 @@ body, html {
   </div>
 </div>
 
+<div class="bgimg-4 display-container opacity-min">
+  <div class="display-middle">
+     <span class="xxlarge text-white wide">MUSIC</span>
+  </div>
+</div>
+
 <div class="content container padding-64" id="music">
   <h3 class="center">MUSIC</h3>
   <p class="center"><em>:)</em></p>
@@ -321,13 +334,6 @@ function toggleFunction() {
         x.className = x.className.replace(" show", "");
     }
 }
-$("div").find("a").click(function(e) {
-    e.preventDefault();
-    var section = $(this).attr("href");
-    $("html, body").animate({
-        scrollTop: $(section).offset().top
-    });
-});
 </script>
 </body>
 </html>
