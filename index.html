@@ -47,8 +47,7 @@ body, html {
 	margin-right: 5px;
     margin-bottom: 4px;
 }
-/*
-.progress1 {
+.progress1:in-viewport {
     animation: progressBar1 3s ease-in-out;
     animation-fill-mode:both; 
 }
@@ -96,7 +95,7 @@ body, html {
   0% { width: 0; }
   100% { width: 25%; }
 }
-*/
+
 .wide {letter-spacing: 10px;}
 .hover-opacity {cursor: pointer;}
 
@@ -335,33 +334,6 @@ function toggleFunction() {
         x.className = x.className.replace(" show", "");
     }
 }
-
-function startProgressBar() {
-
-		$("progress1").each(function() {
-			$(this)
-				.data("origWidth", $(this).width())
-				.width(0)
-				.animate({
-					width: $(this).data("origWidth")
-				}, 1200);
-		});
-
-}
-
-$(window).scroll(function() {
-    var target = $('#code');
-    var targetPosTop = target.position().top; // Position in page
-    var targetHeight = target.height(); // target's height
-    var $target = targetHeight + targetPosTop; // the whole target position
-    var $windowst = $(window).scrollTop()-($(window).height()/2);     // yes divided by 2 to get middle screen view.
-
-    if (($windowst >= $targetPosTop) && ($windowst < $target)){
-                 // start progressbar I guess
-                 startProgressBar();
-    }
-
-});
 </script>
 </body>
 </html>
