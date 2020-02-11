@@ -47,7 +47,7 @@ body, html {
 	margin-right: 5px;
     margin-bottom: 4px;
 }
-
+/*
 .progress1 {
     animation: progressBar1 3s ease-in-out;
     animation-fill-mode:both; 
@@ -96,7 +96,7 @@ body, html {
   0% { width: 0; }
   100% { width: 25%; }
 }
-
+*/
 .wide {letter-spacing: 10px;}
 .hover-opacity {cursor: pointer;}
 
@@ -277,53 +277,6 @@ html {
   </div>
 </div>
 
-<div class="row center dark-grey padding-16">
-  <div class="quarter section">
-    <span class="xlarge">Icon</span><br>
-    Songwriting
-  </div>
-  <div class="quarter section">
-    <span class="xlarge">Icon</span><br>
-    Mixing
-  </div>
-  <div class="quarter section">
-    <span class="xlarge">Icon</span><br>
-    Years Playing
-  </div>
-  <div class="quarter section">
-    <span class="xlarge">Icon</span><br>
-    Guitars
-  </div>
-</div>
-
-<div class="content container padding-64" id="music2">
-  <h3 class="center">MUSIC</h3>
-  <p class="center"><em>:)</em></p>
-
-  <div class="row padding-32 section">
-    <div class="col m4 container">
-      <img src="" class="image round" style="width:100%">
-    </div>
-    <div class="col m8 panel">
-      <div class="large margin-bottom">
-      </div>
-    </div>
-  </div>
-  <p class="large center padding-16">TEMP</p>
-  <p class="wide"><i class="fa fa-code"></i>TEMP</p>
-  <div class="light-grey">
-    <div class="container padding-small dark-grey center progress1" style="width:90%">45%</div>
-  </div>
-  <p class="wide"><i class="fa fa-database"></i>TEMP</p>
-  <div class="light-grey">
-    <div class="container padding-small dark-grey center progress2" style="width:60%">30%</div>
-  </div>
-  <p class="wide"><i class="fa fa-laptop-code"></i>TEMP</p>
-  <div class="light-grey">
-    <div class="container padding-small dark-grey center progress3" style="width:50%">25%</div>
-  </div>
-</div>
-
 <div class="bgimg-3 display-container opacity-min">
   <div class="display-middle">
      <span class="xxlarge text-white wide">SOCIAL</span>
@@ -382,6 +335,33 @@ function toggleFunction() {
         x.className = x.className.replace(" show", "");
     }
 }
+
+function startProgressBar() {
+
+		$("progress1").each(function() {
+			$(this)
+				.data("origWidth", $(this).width())
+				.width(0)
+				.animate({
+					width: $(this).data("origWidth")
+				}, 1200);
+		});
+
+}
+
+$(window).scroll(function() {
+    var target = $('#code');
+    var targetPosTop = target.position().top; // Position in page
+    var targetHeight = target.height(); // target's height
+    var $target = targetHeight + targetPosTop; // the whole target position
+    var $windowst = $(window).scrollTop()-($(window).height()/2);     // yes divided by 2 to get middle screen view.
+
+    if (($windowst >= $targetPosTop) && ($windowst < $target)){
+                 // start progressbar I guess
+                 startProgressBar();
+    }
+
+});
 </script>
 </body>
 </html>
