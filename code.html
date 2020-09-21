@@ -76,14 +76,14 @@ html {
     <a href="#code" class="bar-item button hide-small"><i class="fa fa-file-code"></i> CODE</a>
     <a href="#graphics" class="bar-item button hide-small"><i class="fa fa-photo-video"></i> ART</a>
 	<a href="#social" class="bar-item button hide-small"><i class="fa fa-user"></i> SOCIAL</a>
-	<button onclick="myFunction()">dark mode</button>
+	<button onclick="darkFunction()">dark mode</button>
   </div>
 
   <div id="navDemo" class="bar-block white hide hide-large hide-medium">
     <a href="#code" class="bar-item button" onclick="toggleFunction()">CODE</a>
     <a href="#graphics" class="bar-item button" onclick="toggleFunction()">ART</a>
     <a href="#social" class="bar-item button" onclick="toggleFunction()">SOCIAL</a>
-	<button onclick="myFunction()">dark mode</button>
+	<button onclick="darkFunction()">dark mode</button>
   </div>
 </div>
 
@@ -269,7 +269,7 @@ function toggleFunction() {
         x.className = x.className.replace(" show", "");
     }
 }
-function myFunction() {
+function darkFunction() {
   var element = document.body;
   element.classList.toggle("dark-mode");
 }
