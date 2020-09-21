@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<title>roofdrunk | roofdrunk</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/images/favicon.ico">
+<link rel="stylesheet" href="/css/theme.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* for parallax effect */
+.bgimg-2, .bgimg-3, .bgimg-4 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+}
+.bgimg-2 {
+  background-image: url("/images/huntercover.jpg");
+  min-height: 100%;
+}
+.bgimg-3 {
+  background-image: url("/images/oc3_4k.jpg");
+  min-height: 400px;
+}
+
+.dbh-icon {
+	height: 24px;
+	width: 24px;
+	margin-bottom: 8px;
+}
+.noline {
+	text-decoration: none;
+}
+
+.adobeicon {
+	width:23px; 
+	height:23px;
+	background-position: center;
+	margin-right: 5px;
+    margin-bottom: 4px;
+}
+
+.wide {letter-spacing: 10px;}
+.hover-opacity {cursor: pointer;}
+
+html {
+  scroll-behavior: smooth;
+}
+
+</style>
+<body>
+
+<div class="top">
+  <div class="bar" id="myNavbar">
+    <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="bar-item button"><i class="fa fa-home"></i>HOME</a>
+    <a href="#code" class="bar-item button hide-small"><i class="fa fa-file-code"></i> CODE</a>
+    <a href="#graphics" class="bar-item button hide-small"><i class="fa fa-photo-video"></i> ART</a>
+	<a href="#social" class="bar-item button hide-small"><i class="fa fa-user"></i> SOCIAL</a>
+  </div>
+
+  <div id="navDemo" class="bar-block white hide hide-large hide-medium">
+    <a href="#code" class="bar-item button" onclick="toggleFunction()">CODE</a>
+    <a href="#graphics" class="bar-item button" onclick="toggleFunction()">ART</a>
+    <a href="#social" class="bar-item button" onclick="toggleFunction()">SOCIAL</a>
+  </div>
+</div>
+
+<div class="content container padding-64" id="code">
+  <h3 class="center">PROGRAMMING</h3>
+  <p class="center"><em>I got, like, a degree</em></p>
+  <p>I graduated May of 2019, with a BS in CS, after switching from Mechanical Engineering in the spring of 2016. </p>
+  <div class="row">
+    <div class="col m6 center padding-large">
+      <p><b><i class="fa fa-code-branch margin-right"></i>Some picture</b></p><br>
+      <img src="/images/boldgn.png" class="round image" alt="Get Gnome'd" width="375" height="375">
+    </div>
+
+    <div class="col m6 padding-large">
+      <p>	I'm bad at creative writing.</p>
+	  <p>	So I started blasting.</p>
+    </div>
+  </div>
+</div>
+
+<div class="bgimg-2 display-container opacity-min">
+  <div class="display-middle">
+    <span class="xxlarge text-white wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<div class="content container padding-64" id="graphics">
+  <h3 class="center">MY WORK</h3>
+  <p>	I've been using Photoshop and related apps to create and design for over 8 years. I've worked on projects ranging from:</p>
+  <ul>
+	<li>Events / Flyers / Logos</li>
+	<li>Photo-editing / Touchups / Restoration</li>
+	<li>Digital Art / Design</li>
+  </ul>
+  <p>	I'm always looking for new oppurtunites to grow & expand my skills; often taking on personal projects, or setting challenges for myself. You can see the results of those and other examples of my work below, as well as placed all throughout my website.</p>
+  <p class="center"><em>Here's some examples of my work.</em></p><br>
+
+  <div class="row-padding center">
+    <div class="col m3">
+      <img src="/images/gnomemilkshirt.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Got Gnome?">
+    </div>
+
+    <div class="col m3">
+      <img src="/images/synthgnome2.png" style="width:100%; margin-top:12px;" onclick="onClick(this)" class="hover-opacity" alt="Enter the Gnome">
+    </div>
+
+    <div class="col m3">
+      <img src="/images/danksweat180dpi2.png" style="width:100%; margin-top:75px;" onclick="onClick(this)" class="hover-opacity" alt="Anxiety in physical form">
+    </div>
+
+    <div class="col m3">
+      <img src="/images/captnosip2.png" style="width:100%; margin-top:35px;" onclick="onClick(this)" class="hover-opacity" alt="Careful not to spill">
+    </div>
+  </div>
+
+  <div class="row-padding center section">
+    <div class="col m3">
+      <img src="/images/DsG8UuwU8AEr4kd.jpg" style="width:100%; margin-bottom:10px;" onclick="onClick(this)" class="hover-opacity" alt="Open your Eyes">
+    </div>
+
+    <div class="col m3">
+      <img src="/images/toasthunter.png" style="width:100%; margin-bottom:10px;" onclick="onClick(this)" class="hover-opacity" alt="Toasty">
+    </div>
+
+    <div class="col m3">
+      <img src="/images/DhzTh6BX4AAn63t.jpg" style="width:100%; margin-bottom:10px;" onclick="onClick(this)" class="hover-opacity" alt="Among the Stars">
+    </div>
+
+    <div class="col m3">
+      <img src="/images/Dhex4_ZWsAAT4rs.jpg" style="width:100%; margin-bottom:10px;" onclick="onClick(this)" class="hover-opacity" alt="La Mort de Hunter">
+    </div>
+<!--    <button class="button padding-large light-grey" style="margin-top:64px">See More</button> -->
+  </div>
+  <p class="large center padding-16">PROGRAMS</p>
+  <p class="wide"><img src="/images/photoshop.png" class="adobeicon">Photoshop</p>
+  <div class="light-grey">
+    <div class="container padding-small dark-grey center" style="width:91.67%">55%</div>
+  </div>
+  <p class="wide"><img src="/images/aftereffects.png"  class="adobeicon">After Effects & <img src="/images/premiere.png"  class="adobeicon">Premiere</p>
+  <div class="light-grey">
+    <div class="container padding-small dark-grey center" style="width:50%">30%</div>
+  </div>
+  <p class="wide"><img src="/images/illustrator.png"  class="adobeicon">Illustrator</p>
+  <div class="light-grey">
+    <div class="container padding-small dark-grey center" style="width:25%">15%</div>
+  </div>
+</div>
+
+<div class="row center dark-grey padding-16">
+  <div class="quarter section">
+    <span class="xlarge">4+</span><br>
+    Clients
+  </div>
+  <div class="quarter section">
+    <span class="xlarge">7+</span><br>
+    Years
+  </div>
+  <div class="quarter section">
+    <span class="xlarge">60+</span><br>
+    Designs Created
+  </div>
+  <div class="quarter section">
+    <span class="xlarge">100+</span><br>
+    Cans of Monster
+  </div>
+</div>
+
+<div id="modal01" class="modal" onclick="this.style.display='none'">
+  <div class="modal-content animate-zoom center transparent padding-64">
+    <img id="img01" class="image">
+    <p id="caption" style="color:#fff" class="large"></p>
+  </div>
+</div>
+
+<div class="bgimg-3 display-container opacity-min">
+  <div class="display-middle">
+     <span class="xxlarge text-white wide">SOCIAL</span>
+  </div>
+</div>
+
+<div class="content container padding-64" id="social">
+  <p class="center"><em>Pardon my dust. This section isn't finished yet. Actually the whole website is still in progress. Things to do:</em></p>
+  <ul>
+  <li>implement lazy loading</li>
+  <li>add descriptions/flesh out text</li>
+  <li>change to multi-page layout instead of landing page</li>
+  </ul>
+  <h4 class="center"><a href="https://github.com/bhebert26/" class="noline">GitHub</a></h3>
+  <h4 class="center"><a href="https://twitter.com/ruufdrunk" class="noline">Twitter</a></h3>
+  <h4 class="center"><a href="https://www.twitch.tv/ruufdrunk" class="noline">Twitch</a></h3>
+  <h4 class="center"><a href="https://www.designbyhumans.com/shop/DankFuel/" class="noline">DesignByHumans</a></h3>
+
+  <div class="row padding-32 section">
+    <div class="col m4 container">
+      <img src="" class="image round" style="width:100%">
+    </div>
+    <div class="col m8 panel">
+      <div class="large margin-bottom">
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="center black padding-32 opacity hover-opacity-off">
+  <a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
+  <div class="xlarge section">
+    <a href="https://github.com/bhebert26/" class="fab fa-github hover-opacity noline"></a>
+	<a href="https://twitter.com/ruufdrunk" class="fab fa-twitter hover-opacity noline"></a>
+	<a href="https://www.twitch.tv/ruufdrunk" class="fab fa-twitch hover-opacity noline"></a>
+	<a href="https://www.designbyhumans.com/shop/DankFuel/"><img src="/images/dbhlogowhite.svg" class="dbh-icon hover-opacity"></a>
+  </div>
+</footer>
+
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "bar" + " card" + " animate-top" + " white";
+    } else {
+        navbar.className = navbar.className.replace(" card animate-top white", "");
+    }
+}
+
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("show") == -1) {
+        x.className += " show";
+    } else {
+        x.className = x.className.replace(" show", "");
+    }
+}
+</script>
+</body>
+</html>
