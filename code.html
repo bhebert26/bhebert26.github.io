@@ -16,17 +16,20 @@ body, html {
 }
 
 /* for parallax effect */
-.bgimg-2, .bgimg-3, .bgimg-4 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.bgimg-1 {
+  background-image: url("/images/galaxy.jpg");
+  min-height: 400px;
 }
 .bgimg-2 {
   background-image: url("/images/huntercover.jpg");
-  min-height: 100%;
+  min-height: 400px;
 }
 .bgimg-3 {
   background-image: url("/images/oc3_4k.jpg");
@@ -75,6 +78,12 @@ html {
     <a href="#code" class="bar-item button" onclick="toggleFunction()">CODE</a>
     <a href="#graphics" class="bar-item button" onclick="toggleFunction()">ART</a>
     <a href="#social" class="bar-item button" onclick="toggleFunction()">SOCIAL</a>
+  </div>
+</div>
+
+<div class="bgimg-1 display-container opacity-min" id="home">
+  <div class="display-middle" style="white-space:nowrap;">
+    <span class="center padding-large black xlarge wide animate-opacity">roofdrunk.dev</span>
   </div>
 </div>
 
