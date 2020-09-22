@@ -323,7 +323,11 @@ function toggleFunction() {
     }
 }
 function darkFunction() {
-  var element = document.body;
+  var element = document.getElementById("code");
+  element.classList.toggle("dark-mode");
+  var element = document.getElementById("graphics");
+  element.classList.toggle("dark-mode");
+  var element = document.getElementById("social");
   element.classList.toggle("dark-mode");
 }
 </script>
