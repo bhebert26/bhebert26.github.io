@@ -37,6 +37,7 @@ body, html {
   left: 0;
   right: 0;
   bottom: 0;
+  color: #333333;
   background-color: #333333;
   -webkit-transition: .4s;
   transition: .4s;
@@ -48,15 +49,17 @@ body, html {
   width: 19px;
   left: 2px;
   bottom: 2px;
-  background-color: white;
+  color: #dcdcdc;
+  background-color: #dcdcdc;
   -webkit-transition: .4s;
   transition: .4s;
 }
 input:checked + .slider {
   background-color: #dcdcdc;
+  box-shadow: 0 0 1px #dcdcdc;
 }
 input:focus + .slider {
-  box-shadow: 0 0 1px #dcdcdc;
+  box-shadow: 0 0 1px #333333;
 }
 input:checked + .slider:before {
   -webkit-transform: translateX(19px);
