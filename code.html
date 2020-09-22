@@ -142,7 +142,7 @@ html {
 
 <div class="bgimg-1 display-container opacity-min" id="home">
   <div class="display-middle" style="white-space:nowrap;">
-    <span class="center padding-large black xlarge wide animate-opacity">HEY! you shouldn't be here, this is a test page >:(</span>
+    <span class="center padding-large black xlarge wide animate-opacity" id="titlecard">HEY! you shouldn't be here, this is a test page >:(</span>
   </div>
 </div>
 
@@ -163,7 +163,7 @@ html {
   </div>
 </div>
 
-<div class="bgimg-2 display-container opacity-min">
+<div class="bgimg-2 display-container opacity-min" id="img2">
   <div class="display-middle">
     <span class="xxlarge text-white wide">PORTFOLIO</span>
   </div>
@@ -257,7 +257,7 @@ html {
   </div>
 </div>
 
-<div class="bgimg-3 display-container opacity-min">
+<div class="bgimg-3 display-container opacity-min" id="img3">
   <div class="display-middle">
      <span class="xxlarge text-white wide">SOCIAL</span>
   </div>
@@ -286,7 +286,7 @@ html {
   </div>
 </div>
 
-<footer class="center black padding-32 opacity hover-opacity-off">
+<footer class="center black padding-32 opacity hover-opacity-off" id="footer">
   <a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
   <div class="xlarge section">
     <a href="https://github.com/bhebert26/" class="fab fa-github hover-opacity noline"></a>
@@ -328,6 +328,10 @@ function darkFunction() {
   var element = document.getElementById("graphics");
   element.classList.toggle("dark-mode");
   var element = document.getElementById("social");
+  element.classList.toggle("dark-mode");
+  
+  var element = document.getElementById("footer");
+  element.classList.toggle("black");
   element.classList.toggle("dark-mode");
 }
 </script>
