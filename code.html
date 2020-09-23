@@ -15,7 +15,7 @@ body, html {
   line-height: 1.8;
 }
 .dark-mode {
-  background-color: #333333;
+  background-color: #222222;
   color: #dcdcdc;
 }
 .switch {
@@ -143,9 +143,9 @@ html {
   </div>
 </div>
 
-<div class="bgimg-1 display-container opacity-min" id="home">
+<div class="bgimg-1 display-container" id="home">
   <div class="display-middle" style="white-space:nowrap;">
-    <span class="center padding-large black xlarge wide animate-opacity" id="titlecard">HEY! you shouldn't be here, this is a test page >:(</span>
+    <span class="center padding-large dark-mode xlarge wide animate-opacity" id="titlecard">HEY! you shouldn't be here, this is a test page >:(</span>
   </div>
 </div>
 
@@ -166,7 +166,7 @@ html {
   </div>
 </div>
 
-<div class="bgimg-2 display-container opacity-min" id="img2">
+<div class="bgimg-2 display-container" id="img2">
   <div class="display-middle">
     <span class="xxlarge text-white wide">PORTFOLIO</span>
   </div>
@@ -260,7 +260,7 @@ html {
   </div>
 </div>
 
-<div class="bgimg-3 display-container opacity-min" id="img3">
+<div class="bgimg-3 display-container" id="img3">
   <div class="display-middle">
      <span class="xxlarge text-white wide">SOCIAL</span>
   </div>
@@ -326,11 +326,7 @@ function toggleFunction() {
     }
 }
 function darkFunction() {
-  var element = document.getElementById("code");
-  element.classList.toggle("dark-mode");
-  var element = document.getElementById("graphics");
-  element.classList.toggle("dark-mode");
-  var element = document.getElementById("social");
+  var element = document.body;
   element.classList.toggle("dark-mode");
   var element = document.getElementById("photoshop");
   element.classList.toggle("ai-dm");
