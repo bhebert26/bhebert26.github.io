@@ -125,11 +125,11 @@ html {
     <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="bar-item button"><i class="fa fa-home"></i>HOME</a>
-    <a href="#code" class="bar-item button hide-small"><i class="fa fa-file-code"></i> CODE</a>
-    <a href="#graphics" class="bar-item button hide-small"><i class="fa fa-photo-video"></i> ART</a>
-	<a href="#social" class="bar-item button hide-small"><i class="fa fa-music"></i> MUSIC</a>
-	<a href="#social" class="bar-item button hide-small"><i class="fa fa-user"></i> SOCIAL</a>
+    <a href="#home" class="bar-item button"><i class="fa fa-home"></i>TOP</a>
+    <a href="#past" class="bar-item button hide-small"><i class="fa fa-file-code"></i> PAST</a>
+    <a href="#present" class="bar-item button hide-small"><i class="fa fa-photo-video"></i> PRESENT</a>
+	<a href="#future" class="bar-item button hide-small"><i class="fa fa-music"></i> FUTURE</a>
+	<a href="#contact" class="bar-item button hide-small"><i class="fa fa-user"></i> CONTACT</a>
 	<label class="switch">
 		<input type="checkbox" onclick="darkFunction()">
 		<span class="slider round" id="dmSlider"></span>
@@ -137,10 +137,10 @@ html {
   </div>
 
   <div id="navDemo" class="bar-block white hide hide-large hide-medium">
-    <a href="#code" class="bar-item button" onclick="toggleFunction()">CODE</a>
-    <a href="#graphics" class="bar-item button" onclick="toggleFunction()">ART</a>
-    <a href="#music" class="bar-item button" onclick="toggleFunction()">MUSIC</a>
-	<a href="#social" class="bar-item button" onclick="toggleFunction()">SOCIAL</a>
+    <a href="#past" class="bar-item button" onclick="toggleFunction()">PAST</a>
+    <a href="#present" class="bar-item button" onclick="toggleFunction()">PRESENT</a>
+    <a href="#future" class="bar-item button" onclick="toggleFunction()">FUTURE</a>
+	<a href="#contact" class="bar-item button" onclick="toggleFunction()">CONTACT</a>
   </div>
 </div>
 
@@ -150,108 +150,61 @@ html {
   </div>
 </div>
 
-<div class="content container padding-64" id="code">
-  <h3 class="center">PROGRAMMING</h3>
-  <p class="center"><em>I got, like, a degree eventually. Somewhere in 2019.</em></p>
+<div class="content container padding-64" id="past">
+  <h3 class="center">PAST PROJECTS</h3>
+  <p class="center"><em>A few personal ones, mostly academic.</em></p>
   <div class="row">
-    <div class="col m6 center padding-large">
-      <p><b><i class="fa fa-code-branch margin-right"></i>It's me.</b></p><br>
-      <img src="/images/heylookafilename.png" class="round image" alt="A picture of roofdrunk." width="375" height="375">
-    </div>
-
     <div class="col m6 padding-large" style="margin-top:60px; text-align: justify;">
-      <p>	I had been interested in programming after a robotics class I took in high school. The biggest draw to me was the problem solving aspect of it; that is, finding a solution to the problems within my code. The programs (in relation to robotics) had a specific outcome in mind, and the journey moving through iterations of said program to get to that specific outcome was fun for me.</p>
-	  <p>	Through my experience with coding (getting my degree in computer science and side projects), I found web development and scripting (specifically chat bots) to be what I enjoyed the most. Webdev in particular because it allows my creativity to flow, while still maintaining some aspect of problem solving.</p>
-	  <p>	If you want to see more of what I've done, and/or what I'm currently working on, <a href="https://roofdrunk.dev/code">Click Here.</a></p>
+      <h5 class="center">COLLANGE</h5>
+	  <p>	https://collange.herokuapp.com/</p>
+    </div>
+	<div class="col m6 padding-large" style="margin-top:60px; text-align: justify;">
+      <h5 class="center">DATABASE</h5>
+	  <p>	For a course on database management.</p>
+    </div>
+	<div class="col m6 padding-large" style="margin-top:60px; text-align: justify;">
+      <h5 class="center">SYNESTHETIC MUSIC VISUALIZER</h5>
+	  <p>	This was my senior design project.</p>
     </div>
   </div>
 </div>
 
 <div class="bgimg-2 display-container opacity-min" id="img2">
   <div class="display-middle">
-    <span class="xxlarge text-white wide">ART & DESIGN</span>
+    <span class="xxlarge text-white wide">CURRENT PROJECTS</span>
   </div>
 </div>
 
-<div class="content container padding-64" id="graphics">
-  <h3 class="center">MY WORK</h3>
+<div class="content container padding-64" id="present">
+  <h3 class="center">WHAT I'M WORKING ON</h3>
   <p>	I've been using Photoshop and related apps to create and design since 2014. I've worked on projects ranging from:</p>
   <ul>
-	<li>Events / Flyers</li>
-	<li>Photo-editing </li>
-	<li>Digital Art </li>
+	<li>This Website</li>
+	<li>Twitch & Discord chatbots </li>
   </ul>
-  <p>	I'm always looking for new oppurtunites to grow & expand my skills; often taking on personal projects, or setting challenges for myself. You can see the results of those and other examples of my work below, as well as placed all throughout my website.</p>
-  <p class="center"><em>Here's some examples of stuff I've done.</em></p><br>
-
-  <div class="row-padding center">
-    <div class="col m3">
-      <img src="/images/gnome.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="A cartoon gnome standing in a fighting pose.">
-    </div>
-
-    <div class="col m3">
-      <img src="/images/creamdream.png" style="width:100%; margin-top:25px" onclick="onClick(this)" class="hover-opacity" alt="A pair of twinkies with the text 'Dare to cream' overlaid.">
-    </div>
-
-    <div class="col m3">
-      <img src="/images/danksweat180dpi2.png" style="width:100%; margin-top:60px;" onclick="onClick(this)" class="hover-opacity" alt="A blob sweating and wiping its face.">
-    </div>
-
-    <div class="col m3">
-      <img src="/images/captnosip2.png" style="width:100%; margin-top:20px;" onclick="onClick(this)" class="hover-opacity" alt="An orange dolphin drinking coffee from a cup that says ben on it.">
-    </div>
-  </div>
-  <p class="large center padding-16"><a href="https://roofdrunk.dev/art">Read More...</a></p>
-</div>
-
-<div id="modal01" class="modal" onclick="this.style.display='none'">
-  <div class="modal-content animate-zoom center transparent padding-64">
-    <img id="img01" class="image">
-    <p id="caption" style="color:#fff" class="large"></p>
-  </div>
 </div>
 
 <div class="bgimg-3 display-container opacity-min" id="img3">
   <div class="display-middle">
-     <span class="xxlarge text-white wide">MUSIC</span>
+     <span class="xxlarge text-white wide">FUTURE PROJECTS</span>
   </div>
 </div>
 
-<div class="content container padding-64" id="music">
-  <h3 class="center">MY MUSICAL JOURNEY</h3>
-  <p> I first started guitar when I got into college around 2014 (Yeah, I know, very unique). I had an acoustic guitar that we bought from a friend, and then a used Wine Red Epiphone Les Paul Special II that we picked up from Guitar Center for $50. I didn't play much, mainly just learning those easy riffs that everyone can recognize (Smoke on the Water, Seven Nation Army, etc etc). It wasn't until about 2016 that I seriously started to try and learn things about actually playing the guitar.</p>
-  <p> After that, I had acquired a passion for music that went past listening. I got GAS (gear acquisition syndrome) and slowly increased my repitoire of instruments from an acoustic and an electric to a whole slew of things from electric guitars to basses, to pedals, and even electronic keyboards and drums. </p>
-  <p> For guitars/basses, currently I have: </p>
-  <ul>
-	<li>Squire J Mascis Jazzmaster (6-string Electric Guitar) </li>
-	<li>Epiphone Les Paul Standard Pro (6-string Electric Guitar) </li>
-	<li>Squire Classic Vibe 70's Strat (6-string Electric Guitar) </li>
-	<li>Ibanez miKro Bass (4-string Electric Bass)</li>
-	<li>Michael Kelly Custom Collection Element 5 (5-string Electric Bass) </li>
-	<li>Ibanez AEG2011-VV (6-string Acoustic-Electric)</li>
-  </ul>
-  <p class="large center padding-16"><a href="https://roofdrunk.dev/music">Explore...</a></p>
+<div class="content container padding-64" id="future">
+  <h3 class="center">IDEAS</h3>
+  <p> This is empty right now because I don't currently have any ideas.</p>
 </div>
 
 <div class="bgimg-4 display-container opacity-min" id="img4">
   <div class="display-middle">
-     <span class="xxlarge text-white wide">SOCIAL</span>
+     <span class="xxlarge text-white wide">CONTACT</span>
   </div>
 </div>
 
-<div class="content container padding-64" id="social">
-  <h3 class="center">SOCIAL STUFF</h3>
+<div class="content container padding-64" id="contact">
+  <h3 class="center">NEED SOMETHING?</h3>
   <p class="center"><em>Here's like, links and stuff.</em></p>
-  <p> These are the main places I usually keep to and update, so if you're wondering what I'm doing, you can check some of these.* </p>
-  <ul>
-	<li><a href="https://github.com/bhebert26/">My GitHub</a>, where I'll *try* to put projects I'm working/worked on. </li>
-	<li><a href="https://twitter.com/roof_drunk">My Twitter</a>, where usually I just retweet jokes and rarely post myself. </li>
-	<li><a href="https://www.twitch.tv/roof_drunk">My Twitch</a>, where occasionally I live stream games/music. Did I say occasionally? I meant rarely. </li>
-	<li><a href="https://www.designbyhumans.com/shop/DankFuel/">My DesignByHumans store</a>, where you can buy some of the stuff I've designed on stickers, mugs, and sometimes t-shirts. </li>
-	<li><a href="https://fineartamerica.com/profiles/roof-drunk">My Fine Art America profile</a>, where, if you're interested, you can buy some of my photographs as prints, or even blankets apparently? </li>
-  </ul>
-  <p class="large center padding-16"><a href="https://roofdrunk.dev/social">Check 'em out...</a></p>
-  <p class="small center">*This list will be periodically updated with additional links possibly. </p>
+  <p> Some form.</p>
 </div>
 
 <footer class="center dark-mode padding-16" id="footer">
@@ -264,13 +217,6 @@ html {
 </footer>
 
 <script>
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
 window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
