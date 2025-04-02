@@ -281,12 +281,13 @@ function toggleFunction() {
     }
 }
 function darkFunction() {
-	document.body.classList.toggle("dark-mode");
-	document.getElementById("titlecard").classList.toggle("black, dark-mode");
-	con st idList = document.querySelectorAll('#home, #img2, #img3, #img4');
-	for (const ids of idList) {
-		ids.classList.toggle("opacity-min");
-	}
+  document.body.classList.toggle("dark-mode");
+  document.getElementById("titlecard").classList.toggle("black");
+  document.getElementById("titlecard").classList.toggle("dark-mode");
+  document.getElementById("home").classList.toggle("opacity-min");
+  document.getElementById("img2").classList.toggle("opacity-min");
+  document.getElementById("img3").classList.toggle("opacity-min");
+  document.getElementById("img4").classList.toggle("opacity-min");
 }
 </script>
 </body>
